@@ -24,8 +24,7 @@
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
          </div>
-         <div class="form-group message" ng-class="{ 'success': message.success, 'error': !message.success}" ng-cloak>
-           {{ message.content }}
+         <div class="form-group message" ng-class="{ 'success': message.success, 'error': !message.success}" ng-bind="message.content">
          </div>
    </div>
 
