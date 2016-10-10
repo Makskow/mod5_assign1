@@ -15,7 +15,10 @@ function LunchCheckController ($scope) {
   var comma = ',';
 
   $scope.checkLunch = function () {
-  	var array = $scope.lunch.split(comma);
+  	var string = $scope.lunch;
+  	string = string.replace(/\s+/g, '');
+
+  	var array = string.split(comma);
   	var count = 0;
 
   	for (var i = 0, length = array.length; i < length; i++) {
