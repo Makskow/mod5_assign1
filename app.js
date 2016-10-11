@@ -27,7 +27,11 @@ function LunchCheckController ($scope) {
   		}
   	}
 
-  	if (count > 3) {
+    if (count === 0) {
+      $scope.message.success = false;
+      $scope.message.content = "Please input data!";
+    }
+  	else if (count > 3) {
   		$scope.message.success = false;
   		$scope.message.content = "Too many!";
   	}
