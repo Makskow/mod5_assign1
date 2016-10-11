@@ -29,7 +29,7 @@ function LunchCheckController ($scope) {
 
     if (count === 0) {
       $scope.message.success = false;
-      $scope.message.content = "Please input data!";
+      $scope.message.content = "Please enter data first!";
     }
   	else if (count > 3) {
   		$scope.message.success = false;
